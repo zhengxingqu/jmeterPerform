@@ -1,0 +1,20 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: xn_test
+  datasource:
+    username: root
+    url: jdbc:mysql://121.37.24.197:3306/blog?serverTimezone=GMT%2B8
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart: maxFileSize:10MB
+mybatis-plus:
+  global-config:
+    db-config: logic-delete-field:delete
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
